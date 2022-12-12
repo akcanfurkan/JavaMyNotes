@@ -33,6 +33,17 @@ public class IlkelVeriTipleri {
         ch = (char) -65535;
         System.out.println("Chracter: " + ch + " Its numerıc value: " + (int)ch);
 
+        //boolean
+
+        boolean sonuc = true;
+        System.out.println(sonuc);
+        sonuc = false;
+        System.out.println(sonuc);
+
+        boolean sayi;
+        sayi = false;
+        System.out.println(sayi );
+
 
 
 
