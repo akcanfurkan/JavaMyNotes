@@ -44,6 +44,14 @@ public class IlkelVeriTipleri {
         sayi = false;
         System.out.println(sayi );
 
+        //float ve double sayıların ifade edilmesindeki kısıtlara bir örnek:
+
+        float fSum6 = 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f;
+        System.out.println(fSum6);
+
+        float fSum7 = fSum6 + 0.1f;
+        System.out.println(fSum7);
+
 
 
 
