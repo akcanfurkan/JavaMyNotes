@@ -28,8 +28,8 @@ package referans_kavrami;
     // yazdırır.
     public static void main(String[] args) {
         Cat muffin = new Cat("Muffin", 2, "Kisi");
-        Cat boncuk = new Cat( "Boncuk", 3, "Kedi");
+        Cat mavis = new Cat( "Mavis", 3, "Kedi");
         muffin.printInfo();
-        boncuk.printInfo();
+        mavis.printInfo();
     }
 }
