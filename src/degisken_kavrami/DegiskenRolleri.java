@@ -2,21 +2,21 @@ package degisken_kavrami;
 
 
 /*
-Java dilinde, değişkenler üç farklı role sahip olabilirler:
+*Java dilinde, değişkenler üç farklı role sahip olabilirler:
 
-Instance değişkenler: Bu değişkenler, bir sınıfın nesnelerine özgüdür ve her nesne için ayrı bir değer saklar.
-Örneğin, bir "Kisi" sınıfında, "ad" ve "yas" instance değişkenleri olabilir.
-Bu değişkenler, sınıf içinde yalnızca "this" anahtar sözcüğü ile erişilebilirler.
+*Instance değişkenler: Bu değişkenler, bir sınıfın nesnelerine özgüdür ve her nesne için ayrı bir değer saklar.
+*Örneğin, bir "Kisi" sınıfında, "ad" ve "yas" instance değişkenleri olabilir.
+*Bu değişkenler, sınıf içinde yalnızca "this" anahtar sözcüğü ile erişilebilirler.
 
-Static değişkenler: Bu değişkenler, bir sınıfın tüm nesnelerine ortaktır ve sınıf adı ile erişilebilirler.
-Örneğin, bir "Ogrenci" sınıfında, "ogrenciSayisi" static değişkeni olabilir.
-Bu değişken, sınıf içinde yalnızca "className.variableName" şeklinde veya "variableName" şeklinde erişilebilir.
+*Static değişkenler: Bu değişkenler, bir sınıfın tüm nesnelerine ortaktır ve sınıf adı ile erişilebilirler.
+*Örneğin, bir "Ogrenci" sınıfında, "ogrenciSayisi" static değişkeni olabilir.
+*Bu değişken, sınıf içinde yalnızca "className.variableName" şeklinde veya "variableName" şeklinde erişilebilir.
 
-Local değişkenler: Bu değişkenler, bir yöntem veya bir blok içinde tanımlanır ve
-yalnızca o yöntem veya blok içinde kullanılabilirler.
-Örneğin, bir "topla" yönteminde, "sonuc" local değişkeni olabilir.
+*Local değişkenler: Bu değişkenler, bir yöntem veya bir blok içinde tanımlanır ve
+*yalnızca o yöntem veya blok içinde kullanılabilirler.
+*Örneğin, bir "topla" yönteminde, "sonuc" local değişkeni olabilir.
 
-Aşağıdaki örnekte, "Kisi" sınıfında instance değişkenler, static değişken ve local değişkenler gösterilmektedir:
+*Aşağıdaki örnekte, "Kisi" sınıfında instance değişkenler, static değişken ve local değişkenler gösterilmektedir:
  */
 
 public class DegiskenRolleri {
@@ -57,6 +57,13 @@ public class DegiskenRolleri {
                 return nesneSayisi;
             }
         }
+
+        /*
+        *Bu örnekte, iki adet "Kisi" nesnesi oluşturuldu ve instance değişkenlerine erişildi.
+        *Ayrıca, static değişken olan "nesneSayisi" de sınıf adı ile erişilerek okundu.
+        *Daha sonra, "kisi1" nesnesinin instance değişkenlerine "set" metodları ile yeni değerler atandı ve tekrar okundu.
+         */
+
         Kisi kisi1 = new Kisi("Ahmet", 30);
         Kisi kisi2 = new Kisi("Mehmet", 35);
 
@@ -72,12 +79,14 @@ public class DegiskenRolleri {
         System.out.println(kisi1.getYas()); // 40
 
         // Local değişken örneği
+
         int sonuc = 0;
         for (int i = 0; i < 10; i++) {
             sonuc += i;
         }
         System.out.println(sonuc); // 45
 
+        //Son olarak, bir "for" döngüsü kullanılarak bir local değişken olan "sonuc" değişkeni oluşturuldu ve değer atandı.
 
     }
 }
