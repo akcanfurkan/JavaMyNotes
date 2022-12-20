@@ -29,7 +29,9 @@ package referans_kavrami;
     public static void main(String[] args) {
         Cat muffin = new Cat("Muffin", 2, "Kisi");
         Cat mavis = new Cat( "Mavis", 3, "Kedi");
+        Cat ugurcan = new Cat("Uğurcan", 1, "Kuş" );
         muffin.printInfo();
         mavis.printInfo();
+        ugurcan.printInfo();
     }
 }
