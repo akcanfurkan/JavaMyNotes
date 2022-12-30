@@ -52,6 +52,10 @@ public class IlkelVeriTipleri {
         float fSum7 = fSum6 + 0.1f;
         System.out.println(fSum7);
 
+        //Type Casting
+        double x = 10.5;
+        int y = (int) x;
+
 
 
 
